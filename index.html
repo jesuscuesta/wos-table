@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Procesador de Archivos WoS</title>
+	<link rel="stylesheet" href="table.css">
+</head>
+<body>
+    <h1>Procesador de Archivos Scopus</h1>
+    <input type="file" id="fileInput" multiple>
+	<button onclick="exportTableToCSV('export.csv')">Exportar a Excel</button>
+    <table id="resultsTable" style="display:none;">
+        <thead>
+            <tr>
+				<th>Index</th>
+                <th>Abstract</th>
+                <th>Author Keyword</th>
+                <th>Keyword Plus</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
